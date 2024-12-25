@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chrismas challenge</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@v0.149.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.149.0/examples/jsm/"
+          }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="https://i.pinimg.com/236x/e6/c1/fd/e6c1fd20ad3ff81a73b55b029e42f115.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="https://i.pinimg.com/236x/1a/bd/bc/1abdbc9c387b18e13b3063fcab6f3e62.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="https://i.pinimg.com/236x/97/1e/15/971e15e2aa806bd80e5c95d9772bdf44.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="https://i.pinimg.com/474x/18/33/b0/1833b0b7cb03badf9f136de2b8e13544.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="https://i.pinimg.com/474x/01/49/1e/01491e9776a1e51d60da869018b8779a.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="https://i.pinimg.com/236x/a4/44/8e/a4448e8a4d6de28841b9364c2875e72c.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="https://i.pinimg.com/236x/6e/ec/58/6eec58d3ee26a9dfabbcd50158ee918f.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="https://i.pinimg.com/236x/50/44/7a/50447a1e33246bcf97554765cdd2296e.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="https://i.pinimg.com/236x/16/82/79/1682798954c018bcf12e01046f709763.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="https://i.pinimg.com/474x/74/da/d4/74dad4de0fe0428a1ba629bb6ee6f53a.jpg" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="CSS ONLY">
+                Joyeux Noël
+            </h1>
+            <div class="author">
+                <h2>LECODEUR</h2>
+               
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    
+
+    <script type="module" src="/main.js"></script>
+    
+</body>
+</html>
